@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">News UK Sun Saver</title>
+  <desc id="desc">Unique codes powering a national publisher loyalty programme.</desc>
+
+  <defs>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fffaf4"/>
+      <stop offset="100%" stop-color="#f7f7f4"/>
+    </linearGradient>
+    <linearGradient id="orangeBand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f08e31"/>
+      <stop offset="100%" stop-color="#c66515"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#111111" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .bg{fill:url(#warm)}
+      .panel{fill:#fff;stroke:#e5e5e5;stroke-width:2;filter:url(#shadow)}
+      .dark{fill:#111}
+      .soft{fill:#fafaf9}
+      .orange{fill:#f08e31}
+      .orange2{fill:#c66515}
+      .green{fill:#1f8a4c}
+      .red{fill:#b3261e}
+      .amber{fill:#9a6500}
+      .line{stroke:#d8d8d8;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .line-orange{stroke:#f08e31;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .line-green{stroke:#1f8a4c;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .kicker{font:800 24px Inter,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;fill:#c66515}
+      .title{font:850 58px Inter,Arial,sans-serif;fill:#1a1a1a}
+      .subtitle{font:550 31px Inter,Arial,sans-serif;fill:#4a4a4a}
+      .chip{font:800 24px Inter,Arial,sans-serif;fill:#fff}
+      .mono{font:850 30px "SFMono-Regular","Roboto Mono",Consolas,monospace;letter-spacing:.08em;fill:#1a1a1a}
+      .small{font:750 22px Inter,Arial,sans-serif;fill:#6b6b6b}
+      .tiny{font:750 17px Inter,Arial,sans-serif;fill:#6b6b6b}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="675" rx="28"/>
+  <circle cx="1004" cy="110" r="210" fill="#111111" opacity=".10"/>
+  <circle cx="1040" cy="550" r="170" fill="#111" opacity=".05"/>
+  <rect x="64" y="82" width="620" height="510" rx="28" class="panel"/>
+  <rect x="104" y="122" width="180" height="48" rx="24" fill="url(#orangeBand)"/>
+  <text x="128" y="154" class="chip">Named case</text>
+  <text x="104" y="242" class="title">News UK Sun Saver</text>
+  <text x="106" y="430" class="subtitle">Unique codes powering a national</text>
+<text x="106" y="470" class="subtitle">publisher loyalty programme.</text>
+  
+      <g transform="translate(690 135)">
+        <rect width="350" height="400" rx="14" fill="#fff" stroke="#d8d8d8" stroke-width="4"/>
+        <rect x="28" y="30" width="294" height="54" rx="6" fill="#111"/>
+        <text x="48" y="67" class="chip">SUN SAVER</text>
+        <line x1="30" y1="120" x2="315" y2="120" class="line"/>
+        <line x1="30" y1="164" x2="250" y2="164" class="line"/>
+        <line x1="30" y1="208" x2="315" y2="208" class="line"/>
+        <rect x="38" y="258" width="250" height="58" rx="10" fill="#fbf1e5" stroke="#f08e31" stroke-width="4"/>
+        <text x="65" y="297" class="mono">D4K9P7</text>
+      </g>
+</svg>

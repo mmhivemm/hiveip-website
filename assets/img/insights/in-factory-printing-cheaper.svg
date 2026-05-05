@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Why in-factory printing costs less</title>
+  <desc id="desc">Pay for active promotional codes, not every coded pack forever.</desc>
+
+  <defs>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fffaf4"/>
+      <stop offset="100%" stop-color="#f7f7f4"/>
+    </linearGradient>
+    <linearGradient id="orangeBand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f08e31"/>
+      <stop offset="100%" stop-color="#c66515"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#111111" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .bg{fill:url(#warm)}
+      .panel{fill:#fff;stroke:#e5e5e5;stroke-width:2;filter:url(#shadow)}
+      .dark{fill:#111}
+      .soft{fill:#fafaf9}
+      .orange{fill:#f08e31}
+      .orange2{fill:#c66515}
+      .green{fill:#1f8a4c}
+      .red{fill:#b3261e}
+      .amber{fill:#9a6500}
+      .line{stroke:#d8d8d8;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .line-orange{stroke:#f08e31;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .line-green{stroke:#1f8a4c;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .kicker{font:800 24px Inter,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;fill:#c66515}
+      .title{font:850 58px Inter,Arial,sans-serif;fill:#1a1a1a}
+      .subtitle{font:550 31px Inter,Arial,sans-serif;fill:#4a4a4a}
+      .chip{font:800 24px Inter,Arial,sans-serif;fill:#fff}
+      .mono{font:850 30px "SFMono-Regular","Roboto Mono",Consolas,monospace;letter-spacing:.08em;fill:#1a1a1a}
+      .small{font:750 22px Inter,Arial,sans-serif;fill:#6b6b6b}
+      .tiny{font:750 17px Inter,Arial,sans-serif;fill:#6b6b6b}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="675" rx="28"/>
+  <path d="M690 0h510v675H760Q650 550 690 0Z" fill="#1f8a4c" opacity=".10"/>
+  <rect x="64" y="82" width="590" height="510" rx="28" class="panel"/>
+  <text x="104" y="150" class="kicker">Cost and commercial</text>
+  <text x="104" y="242" class="title">Why in-factory</text>
+<text x="104" y="306" class="title">printing costs</text>
+<text x="104" y="370" class="title">less</text>
+  <text x="106" y="430" class="subtitle">Pay for active promotional</text>
+<text x="106" y="469" class="subtitle">codes, not every coded pack</text>
+<text x="106" y="508" class="subtitle">forever.</text>
+  
+      <g transform="translate(710 170)">
+        <line x1="0" y1="310" x2="360" y2="310" class="line"/>
+        <rect x="35" y="80" width="82" height="230" rx="12" fill="#b3261e" opacity=".82"/>
+        <rect x="145" y="148" width="82" height="162" rx="12" fill="#9a6500" opacity=".82"/>
+        <rect x="255" y="250" width="82" height="60" rx="12" fill="#1f8a4c"/>
+        <text x="36" y="360" class="small">Legacy</text>
+        <text x="258" y="360" class="small">Hive</text>
+      </g>
+      <text x="720" y="124" class="title" font-size="48">Save</text>
+      <text x="720" y="190" class="title" font-size="58">78%-92%</text>
+</svg>

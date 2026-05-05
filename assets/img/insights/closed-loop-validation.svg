@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Closed-loop validation</title>
+  <desc id="desc">Algorithmic validation removes the master-code database risk while validating faster and scaling further than database lookup.</desc>
+
+  <defs>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fffaf4"/>
+      <stop offset="100%" stop-color="#f7f7f4"/>
+    </linearGradient>
+    <linearGradient id="orangeBand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f08e31"/>
+      <stop offset="100%" stop-color="#c66515"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#111111" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .bg{fill:url(#warm)}
+      .panel{fill:#fff;stroke:#e5e5e5;stroke-width:2;filter:url(#shadow)}
+      .dark{fill:#111}
+      .soft{fill:#fafaf9}
+      .orange{fill:#f08e31}
+      .orange2{fill:#c66515}
+      .green{fill:#1f8a4c}
+      .red{fill:#b3261e}
+      .amber{fill:#9a6500}
+      .line{stroke:#d8d8d8;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .line-orange{stroke:#f08e31;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .line-green{stroke:#1f8a4c;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .kicker{font:800 24px Inter,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;fill:#c66515}
+      .title{font:850 58px Inter,Arial,sans-serif;fill:#1a1a1a}
+      .subtitle{font:550 31px Inter,Arial,sans-serif;fill:#4a4a4a}
+      .chip{font:800 24px Inter,Arial,sans-serif;fill:#fff}
+      .mono{font:850 30px "SFMono-Regular","Roboto Mono",Consolas,monospace;letter-spacing:.08em;fill:#1a1a1a}
+      .small{font:750 22px Inter,Arial,sans-serif;fill:#6b6b6b}
+      .tiny{font:750 17px Inter,Arial,sans-serif;fill:#6b6b6b}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="675" rx="28"/>
+  <path d="M690 0h510v675H760Q650 550 690 0Z" fill="#111111" opacity=".10"/>
+  <rect x="64" y="82" width="590" height="510" rx="28" class="panel"/>
+  <text x="104" y="150" class="kicker">Architecture and security</text>
+  <text x="104" y="242" class="title">Closed-loop</text>
+<text x="104" y="306" class="title">validation</text>
+  <text x="106" y="418" class="subtitle">Removes the master-code</text>
+<text x="106" y="457" class="subtitle">database risk, validates faster</text>
+<text x="106" y="496" class="subtitle">and scales beyond lookup.</text>
+  
+      
+  <g transform="translate(735 210) scale(0.78)">
+    <path d="M70 118q-16-54 40-62q15-45 72-35q38-31 83 10q62-12 72 47q48 3 48 45q0 51-59 51H104q-48 0-52-36q-1-11 18-20Z" fill="#111"/>
+    <path d="M135 124h176" stroke="#f08e31" stroke-width="9" stroke-linecap="round"/>
+    <path d="M165 92h98" stroke="#f08e31" stroke-width="9" stroke-linecap="round" opacity=".65"/>
+  </g>
+      <g transform="translate(905 130)">
+        <rect width="170" height="250" rx="20" fill="#fff" stroke="#d8d8d8" stroke-width="4"/>
+        <line x1="38" y1="66" x2="130" y2="66" class="line"/>
+        <line x1="38" y1="110" x2="130" y2="110" class="line"/>
+        <line x1="38" y1="154" x2="130" y2="154" class="line"/>
+        <path d="M38 198h92" stroke="#b3261e" stroke-width="7" stroke-linecap="round"/>
+      </g>
+      <path d="M850 425h220" stroke="#1f8a4c" stroke-width="8" stroke-linecap="round" stroke-dasharray="16 16"/>
+      <text x="790" y="492" class="small">No master list to steal</text>
+      <text x="790" y="528" class="small">No lookup bottleneck</text>
+</svg>

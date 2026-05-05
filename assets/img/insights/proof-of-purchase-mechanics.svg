@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Receipts vs batch vs unique codes</title>
+  <desc id="desc">Which proof-of-purchase mechanic actually protects a campaign?</desc>
+
+  <defs>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fffaf4"/>
+      <stop offset="100%" stop-color="#f7f7f4"/>
+    </linearGradient>
+    <linearGradient id="orangeBand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f08e31"/>
+      <stop offset="100%" stop-color="#c66515"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#111111" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .bg{fill:url(#warm)}
+      .panel{fill:#fff;stroke:#e5e5e5;stroke-width:2;filter:url(#shadow)}
+      .dark{fill:#111}
+      .soft{fill:#fafaf9}
+      .orange{fill:#f08e31}
+      .orange2{fill:#c66515}
+      .green{fill:#1f8a4c}
+      .red{fill:#b3261e}
+      .amber{fill:#9a6500}
+      .line{stroke:#d8d8d8;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .line-orange{stroke:#f08e31;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .line-green{stroke:#1f8a4c;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .kicker{font:800 24px Inter,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;fill:#c66515}
+      .title{font:850 58px Inter,Arial,sans-serif;fill:#1a1a1a}
+      .subtitle{font:550 31px Inter,Arial,sans-serif;fill:#4a4a4a}
+      .chip{font:800 24px Inter,Arial,sans-serif;fill:#fff}
+      .mono{font:850 30px "SFMono-Regular","Roboto Mono",Consolas,monospace;letter-spacing:.08em;fill:#1a1a1a}
+      .small{font:750 22px Inter,Arial,sans-serif;fill:#6b6b6b}
+      .tiny{font:750 17px Inter,Arial,sans-serif;fill:#6b6b6b}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="675" rx="28"/>
+  <path d="M690 0h510v675H760Q650 550 690 0Z" fill="#f08e31" opacity=".10"/>
+  <rect x="64" y="82" width="590" height="510" rx="28" class="panel"/>
+  <text x="104" y="150" class="kicker">Proof of purchase</text>
+  <text x="104" y="242" class="title">Receipts vs batch</text>
+<text x="104" y="306" class="title">vs unique codes</text>
+  <text x="106" y="430" class="subtitle">Which proof-of-purchase</text>
+<text x="106" y="469" class="subtitle">mechanic actually protects a</text>
+<text x="106" y="508" class="subtitle">campaign?</text>
+  
+      
+  <g transform="translate(710 158)">
+    <rect width="180" height="235" rx="24" fill="#fff" stroke="#d8d8d8" stroke-width="4"/>
+    <rect x="25.200000000000003" y="94" width="129.6" height="56.4" rx="10" fill="#fffaf4" stroke="#f08e31" stroke-width="4"/>
+    <text x="36" y="129.25" class="mono" font-size="18">WX1RA</text>
+    <path d="M21.599999999999998 42.3h136.8" class="line"/>
+    <path d="M32.4 173.9h104.39999999999999" class="line"/>
+  </g>
+      <g transform="translate(920 170) rotate(-8)">
+        <path d="M42 0h138l-12 25 12 25-12 25 12 25-12 25 12 25H42L30 125l12-25-12-25 12-25-12-25L42 0Z" fill="#fff" stroke="#d8d8d8" stroke-width="4"/>
+        <rect x="60" y="62" width="104" height="42" rx="6" fill="#fce8e8" stroke="#b3261e" stroke-width="4"/>
+        <text x="79" y="91" font-family="Inter,Arial,sans-serif" font-weight="900" font-size="22" fill="#b3261e">FAKE</text>
+      </g>
+      <path d="M875 390c55 28 125 13 188-45" class="line-green"/>
+      <circle cx="1062" cy="345" r="42" fill="#e5f4ec" stroke="#1f8a4c" stroke-width="5"/>
+      <path d="M1041 345l14 15 31-38" class="line-green"/>
+</svg>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Beyond promotions</title>
+  <desc id="desc">One pack identifier can unlock loyalty, traceability, recall and support.</desc>
+
+  <defs>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fffaf4"/>
+      <stop offset="100%" stop-color="#f7f7f4"/>
+    </linearGradient>
+    <linearGradient id="orangeBand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f08e31"/>
+      <stop offset="100%" stop-color="#c66515"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#111111" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .bg{fill:url(#warm)}
+      .panel{fill:#fff;stroke:#e5e5e5;stroke-width:2;filter:url(#shadow)}
+      .dark{fill:#111}
+      .soft{fill:#fafaf9}
+      .orange{fill:#f08e31}
+      .orange2{fill:#c66515}
+      .green{fill:#1f8a4c}
+      .red{fill:#b3261e}
+      .amber{fill:#9a6500}
+      .line{stroke:#d8d8d8;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .line-orange{stroke:#f08e31;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .line-green{stroke:#1f8a4c;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .kicker{font:800 24px Inter,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;fill:#c66515}
+      .title{font:850 58px Inter,Arial,sans-serif;fill:#1a1a1a}
+      .subtitle{font:550 31px Inter,Arial,sans-serif;fill:#4a4a4a}
+      .chip{font:800 24px Inter,Arial,sans-serif;fill:#fff}
+      .mono{font:850 30px "SFMono-Regular","Roboto Mono",Consolas,monospace;letter-spacing:.08em;fill:#1a1a1a}
+      .small{font:750 22px Inter,Arial,sans-serif;fill:#6b6b6b}
+      .tiny{font:750 17px Inter,Arial,sans-serif;fill:#6b6b6b}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="675" rx="28"/>
+  <path d="M690 0h510v675H760Q650 550 690 0Z" fill="#1f8a4c" opacity=".10"/>
+  <rect x="64" y="82" width="590" height="510" rx="28" class="panel"/>
+  <text x="104" y="150" class="kicker">Applications</text>
+  <text x="104" y="242" class="title">Beyond promotions</text>
+  <text x="106" y="430" class="subtitle">One pack identifier can unlock</text>
+<text x="106" y="469" class="subtitle">loyalty, traceability, recall</text>
+<text x="106" y="508" class="subtitle">and support.</text>
+  
+      <circle cx="900" cy="320" r="62" fill="#111"/>
+      <text x="858" y="330" class="chip">CODE</text>
+      <g stroke="#f08e31" stroke-width="5" fill="#fff">
+        <line x1="900" y1="320" x2="740" y2="190"/>
+        <line x1="900" y1="320" x2="1070" y2="205"/>
+        <line x1="900" y1="320" x2="760" y2="475"/>
+        <line x1="900" y1="320" x2="1060" y2="470"/>
+        <circle cx="740" cy="190" r="46"/>
+        <circle cx="1070" cy="205" r="46"/>
+        <circle cx="760" cy="475" r="46"/>
+        <circle cx="1060" cy="470" r="46"/>
+      </g>
+      <text x="715" y="198" class="tiny">Loyalty</text>
+      <text x="1036" y="213" class="tiny">Recall</text>
+      <text x="720" y="483" class="tiny">Trace</text>
+      <text x="1018" y="478" class="tiny">Support</text>
+</svg>

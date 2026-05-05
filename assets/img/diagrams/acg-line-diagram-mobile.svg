@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 660" role="img" aria-labelledby="title desc">
+  <title id="title">Mobile diagram of the ACG in a production line</title>
+  <desc id="desc">A compact vertical production-line diagram showing the BBD printer controller, the ACG, the coder, and the unique-coded pack.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#F08E31"/>
+    </marker>
+    <linearGradient id="soft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fbf6ef"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="420" height="660" rx="22" fill="url(#soft)"/>
+
+  <g fill="#fff" stroke="#e5e5e5" stroke-width="2">
+    <rect x="54" y="50" width="312" height="86" rx="15"/>
+    <rect x="54" y="216" width="312" height="126" rx="17"/>
+    <rect x="54" y="422" width="312" height="86" rx="15"/>
+    <rect x="72" y="562" width="276" height="72" rx="14"/>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+    <text x="210" y="86" font-size="18" font-weight="700" fill="#1A1A1A">BBD printer</text>
+    <text x="210" y="112" font-size="13" fill="#6B6B6B">controller requests print string</text>
+
+    <text x="210" y="254" font-size="21" font-weight="700" fill="#1A1A1A">ACG</text>
+    <text x="210" y="280" font-size="13" fill="#6B6B6B">Automated Code Generator</text>
+    <text x="210" y="307" font-size="13" fill="#6B6B6B">generates unique code on demand</text>
+    <text x="210" y="328" font-size="13" font-weight="700" fill="#C66515">no code list stored</text>
+
+    <text x="210" y="458" font-size="18" font-weight="700" fill="#1A1A1A">Coder / print head</text>
+    <text x="210" y="484" font-size="13" fill="#6B6B6B">prints BBD + unique code</text>
+
+    <text x="210" y="588" font-size="16" font-weight="700" fill="#1A1A1A">Pack leaves line</text>
+    <text x="210" y="612" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" fill="#C66515">03/03/26</text>
+    <text x="210" y="630" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" fill="#C66515">HW4G9WF34E15</text>
+  </g>
+
+  <g fill="none" stroke="#F08E31" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M210 144V200"/>
+    <path d="M210 350V406"/>
+    <path d="M210 516V548"/>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" font-size="12" fill="#6B6B6B" text-anchor="middle">
+    <text x="276" y="176">print request</text>
+    <text x="270" y="382">code string</text>
+  </g>
+</svg>

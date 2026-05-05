@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Proof-of-purchase comparison</title>
+  <desc id="desc">Till receipts are high friction and easy to fake. Batch codes are low friction but reusable. Unique codes are low friction, one-use and fully auditable.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#111111" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .bg{fill:#fafaf9}
+      .card{fill:#fff;stroke:#e5e5e5;stroke-width:2;filter:url(#shadow)}
+      .card-best{fill:#fffaf4;stroke:#f08e31;stroke-width:3;filter:url(#shadow)}
+      .kicker{font:700 14px Inter,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;fill:#c66515}
+      .title{font:800 30px Inter,Arial,sans-serif;fill:#1a1a1a}
+      .body{font:500 18px Inter,Arial,sans-serif;fill:#4a4a4a}
+      .small{font:700 15px Inter,Arial,sans-serif;fill:#4a4a4a}
+      .label{font:800 18px Inter,Arial,sans-serif;fill:#1a1a1a}
+      .muted{fill:#6b6b6b}
+      .red{fill:#b3261e}
+      .amber{fill:#9a6500}
+      .green{fill:#1f8a4c}
+      .orange{fill:#f08e31}
+      .ink{fill:#1a1a1a}
+      .line{stroke:#d8d8d8;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .line-red{stroke:#b3261e;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .line-amber{stroke:#c47b00;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .line-green{stroke:#1f8a4c;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .pill-bad{fill:#fce8e8}
+      .pill-meh{fill:#fff3d9}
+      .pill-good{fill:#e5f4ec}
+      .tick{font:900 20px Inter,Arial,sans-serif}
+      .code{font:800 21px "SFMono-Regular","Roboto Mono",Consolas,monospace;letter-spacing:.08em;fill:#1a1a1a}
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="720" rx="28"/>
+  <text x="64" y="72" class="kicker">Proof of purchase, compared</text>
+  <text x="64" y="116" class="title">The mechanic decides the fraud, friction and data quality.</text>
+  <text x="64" y="154" class="body">Unique pack codes are the only option that can enforce one real purchase per entry.</text>
+
+  <g transform="translate(64 205)">
+    <rect class="card" width="330" height="430" rx="20"/>
+    <text x="28" y="52" class="title">Till receipts</text>
+    <text x="28" y="84" class="body">Photograph, upload, wait.</text>
+
+    <g transform="translate(70 118)">
+      <path d="M45 0h135l-12 20 12 20-12 20 12 20-12 20 12 20-12 20 12 20H45l-12-20 12-20-12-20 12-20-12-20 12-20-12-20 12-20Z" fill="#ffffff" stroke="#d8d8d8" stroke-width="3"/>
+      <line x1="70" y1="36" x2="152" y2="36" class="line"/>
+      <line x1="70" y1="64" x2="150" y2="64" class="line"/>
+      <line x1="70" y1="92" x2="158" y2="92" class="line"/>
+      <line x1="70" y1="120" x2="135" y2="120" class="line"/>
+      <g transform="rotate(-18 108 82)">
+        <rect x="49" y="63" width="118" height="44" rx="6" fill="#fce8e8" stroke="#b3261e" stroke-width="3"/>
+        <text x="68" y="92" font-family="Inter,Arial,sans-serif" font-weight="900" font-size="24" fill="#b3261e">FAKE</text>
+      </g>
+    </g>
+
+    <g transform="translate(28 315)">
+      <rect class="pill-bad" width="134" height="38" rx="19"/>
+      <text x="18" y="25" class="small red">High friction</text>
+      <rect x="150" class="pill-bad" width="132" height="38" rx="19"/>
+      <text x="168" y="25" class="small red">Easy to fake</text>
+    </g>
+    <text x="28" y="390" class="body">Weak audit trail. Manual</text>
+    <text x="28" y="418" class="body">review or imperfect OCR.</text>
+  </g>
+
+  <g transform="translate(435 205)">
+    <rect class="card" width="330" height="430" rx="20"/>
+    <text x="28" y="52" class="title">Batch codes</text>
+    <text x="28" y="84" class="body">Same code on every pack.</text>
+
+    <g transform="translate(54 124)">
+      <rect x="0" y="10" width="86" height="132" rx="10" fill="#fff" stroke="#d8d8d8" stroke-width="3"/>
+      <rect x="16" y="58" width="54" height="24" rx="4" fill="#fbf1e5"/>
+      <text x="18" y="76" font-family="Inter,Arial,sans-serif" font-weight="900" font-size="12" fill="#1a1a1a">B7X42</text>
+      <rect x="70" y="0" width="86" height="132" rx="10" fill="#fff" stroke="#d8d8d8" stroke-width="3"/>
+      <rect x="86" y="48" width="54" height="24" rx="4" fill="#fbf1e5"/>
+      <text x="88" y="66" font-family="Inter,Arial,sans-serif" font-weight="900" font-size="12" fill="#1a1a1a">B7X42</text>
+      <rect x="140" y="20" width="86" height="132" rx="10" fill="#fff" stroke="#d8d8d8" stroke-width="3"/>
+      <rect x="156" y="68" width="54" height="24" rx="4" fill="#fbf1e5"/>
+      <text x="158" y="86" font-family="Inter,Arial,sans-serif" font-weight="900" font-size="12" fill="#1a1a1a">B7X42</text>
+      <path d="M113 164c34 0 63-13 88-39" class="line-amber"/>
+      <path d="M200 125l-1 28-25-10" class="line-amber"/>
+    </g>
+
+    <g transform="translate(28 315)">
+      <rect class="pill-meh" width="122" height="38" rx="19"/>
+      <text x="18" y="25" class="small amber">Low friction</text>
+      <rect x="138" class="pill-bad" width="152" height="38" rx="19"/>
+      <text x="156" y="25" class="small red">Reusable code</text>
+    </g>
+    <text x="28" y="390" class="body">One leaked code can be</text>
+    <text x="28" y="418" class="body">entered again and again.</text>
+  </g>
+
+  <g transform="translate(806 205)">
+    <rect class="card-best" width="330" height="430" rx="20"/>
+    <text x="28" y="52" class="title">Unique codes</text>
+    <text x="28" y="84" class="body">One pack. One use. Audited.</text>
+
+    <g transform="translate(52 118)">
+      <rect x="0" y="20" width="132" height="166" rx="16" fill="#fff" stroke="#d8d8d8" stroke-width="3"/>
+      <rect x="18" y="88" width="96" height="38" rx="6" fill="#fbf1e5" stroke="#f08e31" stroke-width="2"/>
+      <text x="27" y="113" class="code">WX1RA</text>
+      <path d="M162 72h45a28 28 0 0 1 28 28v0a28 28 0 0 1-28 28h-45" class="line-green"/>
+      <circle cx="225" cy="100" r="42" fill="#e5f4ec" stroke="#1f8a4c" stroke-width="4"/>
+      <path d="M205 99l13 14 28-32" class="line-green" stroke-width="7"/>
+      <path d="M68 190c24 30 68 42 132 36" class="line-green"/>
+      <path d="M201 226l-20 17-5-26" class="line-green"/>
+    </g>
+
+    <g transform="translate(28 315)">
+      <rect class="pill-good" width="132" height="38" rx="19"/>
+      <text x="18" y="25" class="small green">Low friction</text>
+      <rect x="148" class="pill-good" width="146" height="38" rx="19"/>
+      <text x="166" y="25" class="small green">Single use</text>
+    </g>
+    <text x="28" y="390" class="body">Every entry links to a real</text>
+    <text x="28" y="418" class="body">pack and a full audit trail.</text>
+  </g>
+
+  <g transform="translate(64 672)">
+    <circle cx="8" cy="-6" r="5" class="orange"/>
+    <text x="24" y="0" class="small muted">Best for secure promotions: unique codes, validated once, with campaign data you can trust.</text>
+  </g>
+</svg>

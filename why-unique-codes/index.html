@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Why unique codes? Receipts vs batch codes vs unique codes — Hive IP</title>
+  <meta name="description" content="Till receipts are easily faked. Batch codes provide no security. A unique code can only be used once, is audited end-to-end, and never sits in a database. The proof-of-purchase mechanic that actually works.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="canonical" href="https://hiveip.co.uk/why-unique-codes/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Hive IP">
+  <meta property="og:title" content="Why unique codes? Receipts vs batch codes vs unique codes">
+  <meta property="og:description" content="Till receipts are easily faked. Batch codes provide no security. A unique code is the only proof-of-purchase that can be used once and audited end-to-end.">
+  <meta property="og:url" content="https://hiveip.co.uk/why-unique-codes/">
+  <meta property="og:image" content="https://hiveip.co.uk/assets/img/og/why-unique-codes.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:title" content="Why unique codes? Receipts vs batch codes vs unique codes — Hive IP">
+  <meta name="twitter:description" content="Till receipts are easily faked. Batch codes provide no security. A unique code can only be used once, is audited end-to-end, and never sits in a database. The proof-of-purchase mechanic that actually works.">
+  <meta name="twitter:image" content="https://hiveip.co.uk/assets/img/og/why-unique-codes.png">
+  <meta property="og:locale" content="en_GB">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home",  "item": "https://hiveip.co.uk/" },
+      { "@type": "ListItem", "position": 2, "name": "Why unique codes", "item": "https://hiveip.co.uk/why-unique-codes/" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What's wrong with batch codes for promotions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A batch code is the same code printed on every pack of a SKU. Once one consumer enters it, anyone can reuse it indefinitely. Limiting entries per account doesn't help — fraudsters and bots simply create more accounts. As a security mechanism, batch codes provide essentially no protection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why aren't till receipts good enough as proof of purchase?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Till receipts are trivially faked, photographed, edited or generated with image tools. They are hard to audit at scale and create high consumer friction. Receipt fraud is a known and growing problem in promotional marketing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes Hive IP's unique-coding architecture different?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Codes are generated algorithmically using a multi-cipher proprietary algorithm. They are never stored on the ACG and are never held in a list or database that could be leaked. Validation reverse-engineers each code algorithmically rather than looking it up in a table — so a database breach of issued codes is structurally impossible."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can AI Vision work alongside unique codes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When a code is printed on the outside of a pack, the residual fraud concern is in-store code copying. In practice this is rare, but recent AI Vision advances make it feasible to add an audit step that checks the user is not in-store when submitting the code. That check can be applied to every entry or triggered selectively when behaviour looks suspicious."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header" role="banner">
+  <div class="container site-header__inner">
+    <a class="brand" href="../index.html" aria-label="Hive IP — home">
+      <img src="../assets/img/logo/hive-logo.png" alt="Hive IP" width="140" height="62">
+    </a>
+    <nav class="primary-nav" data-nav aria-label="Primary">
+      <a href="../why-unique-codes/index.html" aria-current="page">Why unique codes</a>
+      <a href="../solution/index.html">Solution</a>
+      <a href="../why-in-factory/index.html">Why in-factory</a>
+      <a href="../applications/index.html">Applications</a>
+      <a href="../case-studies/index.html">Case studies</a>
+      <a href="../insights/index.html">Insights</a>
+      <a href="../our-model/index.html">Our model</a>
+    </nav>
+    <a class="btn btn--primary header-cta" href="../contact/index.html">Talk to us</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer" data-nav-toggle>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div id="mobile-drawer" class="mobile-drawer" data-nav-drawer aria-label="Mobile menu">
+    <div class="mobile-drawer__inner" data-nav>
+      <a href="../why-unique-codes/index.html" aria-current="page">Why unique codes</a>
+      <a href="../solution/index.html">Solution</a>
+      <a href="../why-in-factory/index.html">Why in-factory</a>
+      <a href="../applications/index.html">Applications</a>
+      <a href="../case-studies/index.html">Case studies</a>
+      <a href="../insights/index.html">Insights</a>
+      <a href="../our-model/index.html">Our model</a>
+      <a href="../about/index.html">About</a>
+      <a class="btn btn--primary" href="../contact/index.html">Talk to us</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="../index.html">Home</a></li>
+          <li aria-current="page">Why unique codes</li>
+        </ol>
+      </nav>
+      <div class="page-hero__inner">
+        <span class="eyebrow">The foundational argument</span>
+        <h1>The only proof-of-purchase that can be used once, audited end-to-end, and never sits in a database.</h1>
+        <p class="lead">
+          Most FMCG promotions still rely on till receipts or batch codes. Both have known, well-documented weaknesses. A unique code paired with a closed-loop validation system &mdash; with optional AI Vision audit checks when the risk profile warrants it &mdash; is the only mechanic that meets the bar for security, auditability and consumer experience all at once. Here&rsquo;s the case in full.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="layout-article">
+        <article class="prose">
+          <h2 id="problem">The proof-of-purchase problem</h2>
+          <p>Every promotion that involves a reward, a prize, a refund or a loyalty point needs a way to verify that a real purchase happened. The mechanic the brand picks decides three things: how secure the campaign is, how easily it can be audited, and how much fraud the brand will absorb. Get that choice wrong and a campaign can lose its commercial value before it even runs.</p>
+          <p>Despite this, the choice is often made by default rather than design. Around 90% of European on-pack promotions still use batch codes &mdash; the weakest mechanic on the list &mdash; because unique codes have historically been seen as complex and expensive to print. That has changed. The economics, the technology and the integration model are all in a different place to where they were even five years ago.</p>
+
+          <h2 id="mechanics">The four mechanics, side by side</h2>
+          <p>Below is a comparison of the four common proof-of-purchase mechanics &mdash; what they involve, how robust they are against fraud, how easy they are to audit, and what they ask of the consumer.</p>
+
+          <figure>
+            <img class="asset-diagram" src="../assets/img/diagrams/unique-code-comparison-mobile.svg" alt="Comparison showing that till receipts are high friction and easy to fake, batch codes are reusable, and unique codes are low friction, single-use and fully auditable" width="720" height="1180" loading="lazy" decoding="async">
+            <figcaption>Receipts create friction, batch codes can be reused, and unique codes create a one-use audit trail for each pack.</figcaption>
+          </figure>
+
+          <figure>
+            <table class="cmp-table">
+              <thead>
+                <tr>
+                  <th>Mechanic</th>
+                  <th>Single use enforced?</th>
+                  <th>Audit trail</th>
+                  <th>Fraud resistance</th>
+                  <th>Data quality</th>
+                  <th>Consumer friction</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">No verification</th>
+                  <td data-label="Single use enforced?"><span class="no">No</span></td>
+                  <td data-label="Audit trail">None</td>
+                  <td data-label="Fraud resistance">None &mdash; bots and farms thrive</td>
+                  <td data-label="Data quality"><span class="no">Poor</span> &mdash; database fills with bots</td>
+                  <td data-label="Consumer friction">Very low</td>
+                </tr>
+                <tr>
+                  <th scope="row">Till receipts</th>
+                  <td data-label="Single use enforced?"><span class="no">No</span></td>
+                  <td data-label="Audit trail">Manual, partial</td>
+                  <td data-label="Fraud resistance">Low &mdash; receipts are easy to fake</td>
+                  <td data-label="Data quality">Mixed &mdash; friction filters some bots, fakes still slip through</td>
+                  <td data-label="Consumer friction">High</td>
+                </tr>
+                <tr>
+                  <th scope="row">Batch codes</th>
+                  <td data-label="Single use enforced?"><span class="no">No</span></td>
+                  <td data-label="Audit trail">Limited</td>
+                  <td data-label="Fraud resistance">Effectively none</td>
+                  <td data-label="Data quality"><span class="no">Poor</span> &mdash; fake accounts inflate every metric</td>
+                  <td data-label="Consumer friction">Low</td>
+                </tr>
+                <tr>
+                  <th scope="row">Unique codes</th>
+                  <td data-label="Single use enforced?"><span class="yes">Yes</span></td>
+                  <td data-label="Audit trail">Complete &mdash; every entry, every consumer</td>
+                  <td data-label="Fraud resistance">High &mdash; with optional AI Vision audit checks when needed</td>
+                  <td data-label="Data quality"><span class="yes">High</span> &mdash; every record is a verified purchase</td>
+                  <td data-label="Consumer friction">Low &mdash; especially when printed outside the pack</td>
+                </tr>
+              </tbody>
+            </table>
+            <figcaption>Comparison of the four common proof-of-purchase mechanics in FMCG promotions.</figcaption>
+          </figure>
+
+          <h3 id="receipts">Till receipts</h3>
+          <p>Receipts are the original proof-of-purchase mechanic, designed for human inspection in a different era. They are trivially faked: edited in image software, generated by free online tools, or simply photographed from another consumer&rsquo;s shopping. Auditing receipts at scale requires either expensive manual review or imperfect machine OCR, and audit trails are partial at best. They also create real consumer friction &mdash; people have to keep, photograph and upload them &mdash; which depresses participation rates among the audiences brands want most. The friction filters some bots, but motivated fraudsters still produce fakes that pass automated checks.</p>
+
+          <h3 id="batch-codes">Batch codes</h3>
+          <p>Batch codes &mdash; the same code printed on every pack of a SKU &mdash; are the most common mechanic in European on-pack promotions and the weakest. There is no way to enforce single use, because every pack carries the same code; once one consumer enters it, anyone can reuse it. Limiting entries per account doesn&rsquo;t fix the problem either: bots and fraudsters simply create more accounts. The mechanic exists almost entirely because batch codes were historically much cheaper to print than unique codes &mdash; and that has changed.</p>
+          <p>The downstream cost is the consumer database itself. Because anyone can create endless fake accounts and reuse the same code, the records you accumulate are heavily contaminated &mdash; bots, duplicates, throwaway emails &mdash; which inflates campaign statistics, distorts ROI measurement, makes follow-up activity less effective, and creates GDPR overhead for records that shouldn&rsquo;t exist in the first place.</p>
+
+          <h3 id="unique">Unique codes</h3>
+          <p>Every pack carries its own unguessable, non-sequential code. Each code can only be used once, by one consumer, ever &mdash; enforcement happens at the system level rather than as a policy you have to police. Every entry is logged with a full audit trail. Each code can be cross-referenced against the consumer record, the SKU, the production date and the production line, and that cross-reference is itself a layer of fraud detection. Behavioural risk-scoring of consumers, combined with the audit trail, gives campaign-level statistics that are actually meaningful.</p>
+          <p>The data quality follows directly. Because a fake account can&rsquo;t enter a code it doesn&rsquo;t physically have, the consumer database a unique-code campaign produces is essentially self-cleaning: every record corresponds to a real person who made a real purchase. That makes the data genuinely useful for follow-up activity, personalised mechanics, lifetime-value modelling, and meaningful ROI measurement &mdash; and dramatically lowers the GDPR overhead of holding records you wouldn&rsquo;t have wanted in the first place.</p>
+
+          <h2 id="closed-loop">Hive IP&rsquo;s closed-loop architecture takes the security further</h2>
+          <p>The advantages above belong to unique codes in general. The advantages below are specific to how Hive IP implements them, and they matter because they remove a category of risk that has compromised entire campaigns at competing providers.</p>
+          <ul>
+            <li><strong>Codes are generated algorithmically.</strong> A multi-cipher proprietary algorithm produces unique, non-sequential, alpha-numeric codes that cannot be guessed or pattern-derived.</li>
+            <li><strong>Codes are never stored on the ACG.</strong> The hardware unit in your factory holds the algorithm, not a list of codes. There is no list to leak.</li>
+            <li><strong>Codes are never held in a database that could be breached.</strong> Validation reverse-engineers each code algorithmically rather than looking it up in a table of issued codes. The systemic security risk of a large code database does not exist in our architecture.</li>
+            <li><strong>Codes are not passed between third parties unless required.</strong> When supplied to a packaging supplier, the file is encrypted in transit and tightly scoped.</li>
+          </ul>
+
+          <div class="callout">
+            <p><strong>Why this matters in practice.</strong> If a competitor&rsquo;s database of issued codes is leaked or breached, an entire campaign can be compromised before a single code is even used. Closed-loop algorithmic generation closes that vector entirely &mdash; there is no master list of codes to steal.</p>
+          </div>
+
+          <h2 id="ai">AI Vision can add an audit layer when needed</h2>
+          <p>When a unique code is printed on the outside of the pack &mdash; which we strongly recommend for cost, speed and consumer experience &mdash; the residual fraud concern is in-store code copying: someone scanning a code without buying the product. In practice this is rare, but for higher-stakes campaigns the latest AI Vision techniques now make it feasible to check that the user is not in-store when submitting the code.</p>
+          <p>That audit step does not have to be universal. It can be applied to every entry where the brand wants maximum assurance, or triggered selectively when a consumer&rsquo;s behaviour looks suspicious. The campaign flow can ask the user to scan the code and surrounding environment, with BBD and production-line data cross-referenced against the submitted code.</p>
+
+          <p class="pull">A unique code is the only proof-of-purchase that can be used once, audited end-to-end, never exists in an exposable database, generates clean consumer data, and can be supported by AI Vision audit checks when the risk profile warrants it. No other mechanic on this page can do all five.</p>
+
+          <h2 id="when">When till receipts and batch codes still make sense</h2>
+          <p>To be even-handed: there are edge cases where the simpler mechanics still have a place, but the trade-off should be explicit. A free-entry sweepstake may be acceptable for a very low-value prize or pure awareness mechanic, but it often attracts bots, fake details, duplicate accounts and low-intent entries that undermine the consumer database the brand hoped to build. A pure data-capture promotion where the brand cares more about reach than rigour might be served well enough by a batch code, accepting that the resulting data will be noisier. A retail-receipt programme run jointly with a specific retailer might use receipts because they&rsquo;re part of the agreed mechanic with that retailer. But for any promotion with monetary value attached &mdash; cash back, prizes, vouchers worth pursuing, refunds, anti-counterfeit verification &mdash; a unique code is the right primitive.</p>
+
+          <h2 id="faq">Common questions</h2>
+          <div class="faq" role="region" aria-label="Frequently asked questions">
+            <details class="faq__item">
+              <summary>What&rsquo;s wrong with batch codes for promotions?</summary>
+              <div class="faq__body">
+                <p>A batch code is the same code printed on every pack of a SKU. Once one consumer enters it, anyone can reuse it indefinitely. Limiting entries per account doesn&rsquo;t help &mdash; fraudsters and bots simply create more accounts. As a security mechanism, batch codes provide essentially no protection.</p>
+                <p>The reason ~90% of European on-pack promotions still use them is historical: unique codes used to be expensive and complex to print. With Hive IP&rsquo;s in-factory ACG, that&rsquo;s no longer true.</p>
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary>Why aren&rsquo;t till receipts good enough as proof of purchase?</summary>
+              <div class="faq__body">
+                <p>Till receipts are trivially faked, photographed, edited or generated with image tools. They&rsquo;re hard to audit at scale and create high consumer friction. Receipt fraud is a known and growing problem in promotional marketing.</p>
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary>What makes Hive IP&rsquo;s unique-coding architecture different?</summary>
+              <div class="faq__body">
+                <p>Codes are generated algorithmically using a multi-cipher proprietary algorithm. They are never stored on the <abbr title="Automated Code Generator">ACG</abbr> and are never held in a list or database that could be leaked. Validation reverse-engineers each code algorithmically rather than looking it up in a table &mdash; so a database breach of issued codes is structurally impossible.</p>
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary>How can AI Vision work alongside unique codes?</summary>
+              <div class="faq__body">
+                <p>When a code is printed on the outside of a pack, the residual fraud concern is in-store code copying. In practice this is rare, but recent AI Vision advances make it feasible to add an audit step that checks the user is not in-store when submitting the code. It can be applied to all entries, or triggered selectively when a consumer&rsquo;s behaviour pattern looks suspicious.</p>
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary>Can unique codes be used for things beyond promotions?</summary>
+              <div class="faq__body">
+                <p>Yes &mdash; the same per-pack identifier underpins loyalty programmes, anti-counterfeiting, supply-chain traceability, provenance and sustainability data, recall handling, and consumer support. <a href="../applications/index.html">See how unique codes apply across the business.</a></p>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <aside class="toc" aria-label="On this page">
+          <h5>On this page</h5>
+          <ol>
+            <li><a href="#problem">The proof-of-purchase problem</a></li>
+            <li><a href="#mechanics">The four mechanics, side by side</a></li>
+            <li><a href="#closed-loop">Closed-loop architecture</a></li>
+            <li><a href="#ai">AI Vision audit layer</a></li>
+            <li><a href="#when">When the alternatives make sense</a></li>
+            <li><a href="#faq">Common questions</a></li>
+          </ol>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark cta-final" aria-labelledby="cta-h">
+    <div class="container">
+      <span class="eyebrow">Next</span>
+      <h2 id="cta-h">Ready to see the cost case for in-factory printing?</h2>
+      <p>Once you accept unique codes are the right primitive, the next decision is where to print them. The economics, agility and consumer-experience case for in-factory is strong &mdash; and we answer the &ldquo;what about code copying?&rdquo; question openly.</p>
+      <div class="cta-final__actions">
+        <a class="btn btn--primary btn--lg" href="../why-in-factory/index.html">Read the case for in-factory</a>
+        <a class="btn btn--ghost btn--lg" href="../contact/index.html">Talk to us</a>
+      </div>
+      <p class="cta-final__contact">
+        Or get straight in touch:
+        <a href="mailto:info@hiveip.co.uk">info@hiveip.co.uk</a>
+        &middot;
+        <a href="tel:+447787826362">+44&nbsp;7787&nbsp;826&nbsp;362</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <img src="../assets/img/logo/hive-logo.png" alt="Hive IP" width="120" height="54" style="height: 40px; width: auto;">
+        <p>End-to-end unique-coding for FMCG. Generation, print, validation, fraud monitoring and consumer support &mdash; all from one team.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Solution</h5>
+        <ul>
+          <li><a href="../solution/in-factory/index.html">In-factory print (ACG)</a></li>
+          <li><a href="../solution/at-supplier/index.html">Packaging-supplier print</a></li>
+          <li><a href="../solution/validation/index.html">Cloud validation</a></li>
+          <li><a href="../solution/consumer-support/index.html">Consumer Support Panel</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Why Hive IP</h5>
+        <ul>
+          <li><a href="../why-unique-codes/index.html">Why unique codes</a></li>
+          <li><a href="../why-in-factory/index.html">Why in-factory</a></li>
+          <li><a href="../our-model/index.html">Our model</a></li>
+          <li><a href="../case-studies/index.html">Case studies</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="../about/index.html">About Hive IP</a></li>
+          <li><a href="../insights/index.html">Insights</a></li>
+          <li><a href="../contact/index.html">Contact</a></li>
+          <li><a href="mailto:info@hiveip.co.uk">info@hiveip.co.uk</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="footer-year">2026</span> Hive IP Ltd. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

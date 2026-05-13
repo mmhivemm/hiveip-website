@@ -59,7 +59,8 @@ def _normalise_links(html: str, depth: int) -> str:
 
 def page(*, depth, title, description, slug_path, og_title=None, og_desc=None,
          og_image=None, og_image_width=None, og_image_height=None,
-         body_html, breadcrumbs, schema_extra="", current_nav_key, page_class=""):
+         body_html, breadcrumbs, schema_extra="", current_nav_key, page_class="",
+         show_final_phone=True):
     """Render a full HTML page using site conventions."""
     r = rel(depth)
     canonical = f"https://hiveip.co.uk/{slug_path}/"
@@ -110,6 +111,10 @@ def page(*, depth, title, description, slug_path, og_title=None, og_desc=None,
     ]
   }
   </script>"""
+
+    final_phone_html = """
+        &middot;
+        <a href="tel:+447787826362">+44&nbsp;7787&nbsp;826&nbsp;362</a>""" if show_final_phone else ""
 
     og_t = og_title or title
     og_d = og_desc  or description
@@ -237,8 +242,7 @@ def page(*, depth, title, description, slug_path, og_title=None, og_desc=None,
       <p class="cta-final__contact">
         Or get straight in touch:
         <a href="mailto:info@hiveip.co.uk">info@hiveip.co.uk</a>
-        &middot;
-        <a href="tel:+447787826362">+44&nbsp;7787&nbsp;826&nbsp;362</a>
+{final_phone_html}
       </p>
     </div>
   </section>
@@ -386,7 +390,7 @@ def application_body(*, eyebrow, h1, lead, why_unique, mechanic_block, example_h
     return f"""
   <section class="section">
     <div class="container">
-      <div class="page-hero__inner" style="max-width: 64ch;">
+      <div class="page-hero__inner application-hero__inner">
         <span class="eyebrow">{eyebrow}</span>
         <h1>{h1}</h1>
         <p class="lead">{lead}</p>
@@ -461,19 +465,19 @@ CASE_STUDIES = [
     {
         "slug": "case-studies/pepsico",
         "depth": 2,
-        "page_title": "PepsiCo: 200+ ACGs across UK, Netherlands and Portugal — Hive IP case study",
-        "page_desc": "Hive IP's largest deployment: 200+ Automated Code Generators installed across PepsiCo factories in the UK, Netherlands and Portugal, supporting Doritos, Walkers and other PepsiCo brands.",
+        "page_title": "PepsiCo: 200+ ACGS deployed across PepsiCo factories — Hive IP case study",
+        "page_desc": "One of Hive IP's largest deployments: 200+ Automated Code Generators installed across PepsiCo factories, supporting Doritos, Walkers and other PepsiCo brands.",
         "current_nav_key": "case-studies",
         "breadcrumbs": [("", "Home"), ("case-studies/", "Case studies"), (None, "PepsiCo")],
         "body": case_study_body(
             logo_html='<img class="case-hero-logo case-hero-logo--pepsico" src="../../assets/img/logos/pepsico.png" alt="PepsiCo" width="900" height="311" loading="eager" decoding="async">',
             eyebrow="Case study · PepsiCo",
-            h1="200+ ACGs deployed across PepsiCo factories in the UK, Netherlands and Portugal.",
-            lead="The largest in-factory unique-coding programme in European FMCG. More than 200 of Hive IP&rsquo;s ACGs sit on PepsiCo production lines, generating unique codes for Doritos, Walkers and other PepsiCo brands across multiple campaigns and markets.",
+            h1="200+ ACGS deployed across PepsiCo factories.",
+            lead="One of the largest in-factory unique-coding programmes in European FMCG. More than 200 of Hive IP&rsquo;s ACGs sit on PepsiCo production lines, generating unique codes for Doritos, Walkers and other PepsiCo brands across multiple campaigns and markets.",
             chips=["In-factory", "Multi-market", "Snacks", "Doritos", "Walkers"],
             stats=[
                 ("200+", "ACGs installed across PepsiCo factories"),
-                ("3", "countries (UK, Netherlands, Portugal)"),
+                ("Multiple", "markets served across PepsiCo campaigns"),
                 ("100s of millions", "of unique codes generated for PepsiCo per year"),
                 ("0", "production-line slowdowns from ACG deployment"),
             ],
@@ -487,7 +491,7 @@ CASE_STUDIES = [
             """,
             hive_role="""
               <ul>
-                <li>Factory audit and line-by-line ACG configuration across UK, Netherlands and Portugal sites.</li>
+                <li>Factory audit and line-by-line ACG configuration across PepsiCo sites.</li>
                 <li>Supply, install and ongoing service of 200+ ACG units, with hot-swappable spares.</li>
                 <li>Cloud validation, fraud monitoring, optional fraud audit workflows where applicable, and the API integration with PepsiCo&rsquo;s appointed agencies.</li>
                 <li>Consumer Support Panel for each market, with team-leader account setup and one-hour training per market.</li>
@@ -503,7 +507,6 @@ CASE_STUDIES = [
               </ul>
             """,
             related_links=[
-                ("../news-uk/", "News UK / Sun Saver"),
                 ("../../solution/in-factory/", "What is an ACG?"),
                 ("../../why-in-factory/", "The case for in-factory"),
             ],
@@ -700,8 +703,8 @@ CASE_INDEX = {
 def case_index_body():
     cards = []
     cases = [
-        ("pepsico/", "PepsiCo", "200+ ACGs across UK / NL / PT",
-         "The largest in-factory unique-coding programme in European FMCG. Doritos, Walkers and other PepsiCo brands across three countries.",
+        ("pepsico/", "PepsiCo", "200+ ACGs installed",
+         "One of the largest in-factory unique-coding programmes in European FMCG. Doritos, Walkers and other PepsiCo brands across multiple campaigns and markets.",
          "Named"),
         ("news-uk/", "News UK / Sun Saver", "Loyalty for one of the UK's largest publisher loyalty programmes",
          "Hive IP supplies and validates the unique codes underpinning News UK's Sun Saver loyalty programme.",

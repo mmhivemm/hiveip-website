@@ -515,11 +515,6 @@ CONTACT_BODY = """
             <p style="margin: 0;"><a href="mailto:info@hiveip.co.uk">info@hiveip.co.uk</a></p>
             <p style="margin-top: 0.6rem; color: var(--mute); font-size: var(--fs-sm);">Goes directly to the Hive IP team. Response usually within the same working day.</p>
           </div>
-          <div class="contact-card" style="margin-bottom: 1.5rem;">
-            <h3>Phone</h3>
-            <p style="margin: 0;"><a href="tel:+447787826362">+44&nbsp;7787&nbsp;826&nbsp;362</a></p>
-            <p style="margin-top: 0.6rem; color: var(--mute); font-size: var(--fs-sm);">UK office hours, Monday to Friday.</p>
-          </div>
           <div class="contact-card">
             <h3>Where we are</h3>
             <p style="margin: 0; color: var(--ink-soft);">Hive IP Ltd is a UK-based company. We work with FMCG brands and their agencies across Europe.</p>
@@ -603,6 +598,7 @@ def main():
         body_html=CONTACT_BODY,
         breadcrumbs=[("", "Home"), (None, "Contact")],
         current_nav_key="",
+        show_final_phone=False,
     ))
 
     print("Done.")

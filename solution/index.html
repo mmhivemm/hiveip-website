@@ -30,7 +30,7 @@
   <link rel="manifest" href="../site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/site.css">
 
   <script type="application/ld+json">
@@ -111,76 +111,60 @@
       </header>
 
       <div class="flow-diagram">
-        <svg viewBox="0 0 960 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="End-to-end closed-loop diagram from Hive IP code generation, through two print routes, to cloud validation and the consumer journey">
-          <defs>
-            <marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
-              <path d="M0,0 L9,4.5 L0,9 Z" fill="#F08E31"/>
-            </marker>
-          </defs>
+        <div class="solution-flow" role="img" aria-label="Hive IP closed-loop architecture: generate unique codes, print through either the in-factory ACG or packaging supplier route, validate in the cloud, then serve brand apps, consumers, support teams and campaign data.">
+          <div class="solution-flow__grid">
+            <article class="solution-flow__node solution-flow__node--generate">
+              <span class="solution-flow__step">1</span>
+              <h3>Generate</h3>
+              <p>Unique, non-sequential codes are created by Hive IP&rsquo;s proprietary algorithm.</p>
+              <div class="solution-flow__code" aria-hidden="true">
+                <span>HW4G9WF34E15</span>
+                <span>K7P2NQ6Z4R8M</span>
+              </div>
+            </article>
 
-          <!-- Generation node -->
-          <rect x="20" y="180" width="180" height="100" rx="14" fill="#FFFFFF" stroke="#E5E5E5"/>
-          <text x="110" y="215" font-family="Inter, sans-serif" font-weight="700" font-size="14" fill="#1A1A1A" text-anchor="middle">Generation</text>
-          <text x="110" y="235" font-family="Inter, sans-serif" font-size="11" fill="#6B6B6B" text-anchor="middle">algorithmic</text>
-          <text x="110" y="250" font-family="Inter, sans-serif" font-size="11" fill="#6B6B6B" text-anchor="middle">multi-cipher proprietary</text>
+            <div class="solution-flow__routes" aria-label="Choose one print route">
+              <p class="solution-flow__label">Choose the print route</p>
+              <article class="solution-flow__route">
+                <span class="solution-flow__route-tag">Primary route</span>
+                <h3>In-factory ACG</h3>
+                <p>The ACG plugs into existing BBD printers and prints unique codes inline.</p>
+              </article>
+              <article class="solution-flow__route">
+                <span class="solution-flow__route-tag">Alternative route</span>
+                <h3>Packaging supplier</h3>
+                <p>Codes are supplied to your packaging partner for inside-pack print.</p>
+              </article>
+            </div>
 
-          <!-- ACG (top route) -->
-          <rect x="260" y="60" width="180" height="100" rx="14" fill="#FFFFFF" stroke="#E5E5E5"/>
-          <rect x="280" y="80" width="40" height="60" rx="6" fill="#F08E31"/>
-          <circle cx="300" cy="92" r="3" fill="#FFFFFF"/>
-          <rect x="288" y="103" width="22" height="4" rx="2" fill="#FFFFFF"/>
-          <rect x="288" y="111" width="22" height="4" rx="2" fill="#FFFFFF"/>
-          <text x="335" y="94" font-family="Inter, sans-serif" font-weight="700" font-size="12" fill="#1A1A1A">Automated Code</text>
-          <text x="335" y="110" font-family="Inter, sans-serif" font-weight="700" font-size="12" fill="#1A1A1A">Generator (ACG)</text>
-          <text x="335" y="128" font-family="Inter, sans-serif" font-size="10" fill="#6B6B6B">in your factory</text>
-          <text x="335" y="143" font-family="Inter, sans-serif" font-size="10" fill="#6B6B6B">primary route</text>
+            <article class="solution-flow__node solution-flow__node--cloud">
+              <span class="solution-flow__step">2</span>
+              <h3>Validate in the cloud</h3>
+              <p>Both print routes use algorithmic validation instead of a database lookup: faster, secure, scalable.</p>
+              <ul>
+                <li>Fraud monitoring</li>
+                <li>API access</li>
+                <li>99.85% SLA</li>
+              </ul>
+            </article>
 
-          <!-- Packaging supplier (bottom route) -->
-          <rect x="260" y="300" width="180" height="100" rx="14" fill="#FFFFFF" stroke="#E5E5E5"/>
-          <path d="M285 320 L315 320 L315 350 L295 350 L295 370 L285 370 Z" fill="#FAFAF9" stroke="#BCBEC0"/>
-          <text x="335" y="340" font-family="Inter, sans-serif" font-weight="700" font-size="13" fill="#1A1A1A">Packaging</text>
-          <text x="335" y="356" font-family="Inter, sans-serif" font-weight="700" font-size="13" fill="#1A1A1A">supplier</text>
-          <text x="335" y="375" font-family="Inter, sans-serif" font-size="10" fill="#6B6B6B">inside-pack</text>
-
-          <!-- Cloud validation -->
-          <rect x="500" y="180" width="200" height="100" rx="14" fill="#111111"/>
-          <text x="600" y="210" font-family="Inter, sans-serif" font-weight="700" font-size="14" fill="#F5F5F5" text-anchor="middle">Cloud validation</text>
-          <text x="600" y="232" font-family="Inter, sans-serif" font-size="11" fill="#B5B5B5" text-anchor="middle">algorithmic · 99.85% SLA</text>
-          <text x="600" y="250" font-family="Inter, sans-serif" font-size="11" fill="#B5B5B5" text-anchor="middle">fraud monitoring · API</text>
-          <text x="600" y="265" font-family="Inter, sans-serif" font-size="11" fill="#F08E31" text-anchor="middle">AWS</text>
-
-          <!-- Brand app -->
-          <rect x="760" y="60" width="180" height="100" rx="14" fill="#FFFFFF" stroke="#E5E5E5"/>
-          <text x="850" y="100" font-family="Inter, sans-serif" font-weight="700" font-size="13" fill="#1A1A1A" text-anchor="middle">Brand app /</text>
-          <text x="850" y="118" font-family="Inter, sans-serif" font-weight="700" font-size="13" fill="#1A1A1A" text-anchor="middle">agency platform</text>
-          <text x="850" y="138" font-family="Inter, sans-serif" font-size="11" fill="#6B6B6B" text-anchor="middle">via Hive IP API</text>
-
-          <!-- Consumer -->
-          <rect x="760" y="200" width="180" height="100" rx="14" fill="#FFFFFF" stroke="#E5E5E5"/>
-          <text x="850" y="240" font-family="Inter, sans-serif" font-weight="700" font-size="13" fill="#1A1A1A" text-anchor="middle">Consumer</text>
-          <text x="850" y="260" font-family="Inter, sans-serif" font-size="11" fill="#6B6B6B" text-anchor="middle">scans · enters · redeems</text>
-
-          <!-- Support panel -->
-          <rect x="760" y="320" width="180" height="100" rx="14" fill="#FFFFFF" stroke="#E5E5E5"/>
-          <text x="850" y="360" font-family="Inter, sans-serif" font-weight="700" font-size="13" fill="#1A1A1A" text-anchor="middle">Support team</text>
-          <text x="850" y="378" font-family="Inter, sans-serif" font-size="11" fill="#6B6B6B" text-anchor="middle">via Consumer Support</text>
-          <text x="850" y="392" font-family="Inter, sans-serif" font-size="11" fill="#6B6B6B" text-anchor="middle">Panel</text>
-
-          <!-- Arrows: Generation to two routes -->
-          <path d="M200 220 C 230 220, 230 110, 260 110" stroke="#F08E31" stroke-width="2" fill="none" marker-end="url(#arr)"/>
-          <path d="M200 240 C 230 240, 230 350, 260 350" stroke="#F08E31" stroke-width="2" fill="none" marker-end="url(#arr)"/>
-          <!-- Two routes to validation -->
-          <path d="M440 110 C 470 110, 470 210, 500 210" stroke="#F08E31" stroke-width="2" fill="none" marker-end="url(#arr)"/>
-          <path d="M440 350 C 470 350, 470 250, 500 250" stroke="#F08E31" stroke-width="2" fill="none" marker-end="url(#arr)"/>
-          <!-- Validation to brand app, consumer, support -->
-          <path d="M700 200 C 730 200, 730 110, 760 110" stroke="#F08E31" stroke-width="2" fill="none" marker-end="url(#arr)"/>
-          <path d="M700 230 L 760 230" stroke="#F08E31" stroke-width="2" fill="none" marker-end="url(#arr)"/>
-          <path d="M700 260 C 730 260, 730 370, 760 370" stroke="#F08E31" stroke-width="2" fill="none" marker-end="url(#arr)"/>
-
-          <!-- Labels above route lines -->
-          <text x="350" y="200" font-family="Inter, sans-serif" font-size="10" fill="#6B6B6B" text-anchor="middle">two print routes,</text>
-          <text x="350" y="214" font-family="Inter, sans-serif" font-size="10" fill="#6B6B6B" text-anchor="middle">one validation backbone</text>
-        </svg>
+            <div class="solution-flow__outputs" aria-label="What the platform powers downstream">
+              <p class="solution-flow__label">Power the campaign</p>
+              <article>
+                <h3>Brand app or agency platform</h3>
+                <p>Consumer entries validate through the Hive IP API.</p>
+              </article>
+              <article>
+                <h3>Consumer Support Panel</h3>
+                <p>Your support team can inspect codes, claims and audit trails.</p>
+              </article>
+              <article>
+                <h3>Clean campaign data</h3>
+                <p>Every accepted code becomes a cleaner, single-use proof-of-purchase record.</p>
+              </article>
+            </div>
+          </div>
+        </div>
       </div>
       <p style="text-align: center; max-width: 60ch; margin: 1.5rem auto 0; color: var(--mute); font-size: var(--fs-sm);">Whichever print route you choose, validation, fraud monitoring, the API and the Consumer Support Panel are identical.</p>
     </div>

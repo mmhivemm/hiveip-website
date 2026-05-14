@@ -151,8 +151,8 @@
           <p>Every promotion that involves a reward, a prize, a refund or a loyalty point needs a way to verify that a real purchase happened. The mechanic the brand picks decides three things: how secure the campaign is, how easily it can be audited, and how much fraud the brand will absorb. Get that choice wrong and a campaign can lose its commercial value before it even runs.</p>
           <p>Despite this, the choice is often made by default rather than design. Around 90% of European on-pack promotions still use batch codes &mdash; the weakest mechanic on the list &mdash; because unique codes have historically been seen as complex and expensive to print. That has changed. The economics, the technology and the integration model are all in a different place to where they were even five years ago.</p>
 
-          <h2 id="mechanics">The four mechanics, side by side</h2>
-          <p>Below is a comparison of the four common proof-of-purchase mechanics &mdash; what they involve, how robust they are against fraud, how easy they are to audit, and what they ask of the consumer.</p>
+          <h2 id="mechanics">The three mechanics, side by side</h2>
+          <p>Below is a comparison of the three common proof-of-purchase mechanics &mdash; what they involve, how robust they are against fraud, how easy they are to audit, and what they ask of the consumer.</p>
 
           <figure>
             <img class="asset-diagram" src="../assets/img/diagrams/unique-code-comparison-mobile.svg" alt="Comparison showing that till receipts are high friction and easy to fake, batch codes are reusable, and unique codes are low friction, single-use and fully auditable" width="720" height="1180" loading="lazy" decoding="async">
@@ -172,14 +172,6 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <th scope="row">No verification</th>
-                  <td data-label="Single use enforced?"><span class="no">No</span></td>
-                  <td data-label="Audit trail">None</td>
-                  <td data-label="Fraud resistance">None &mdash; bots and farms thrive</td>
-                  <td data-label="Data quality"><span class="no">Poor</span> &mdash; database fills with bots</td>
-                  <td data-label="Consumer friction">Very low</td>
-                </tr>
                 <tr>
                   <th scope="row">Till receipts</th>
                   <td data-label="Single use enforced?"><span class="no">No</span></td>
@@ -206,7 +198,7 @@
                 </tr>
               </tbody>
             </table>
-            <figcaption>Comparison of the four common proof-of-purchase mechanics in FMCG promotions.</figcaption>
+            <figcaption>Comparison of the three common proof-of-purchase mechanics in FMCG promotions.</figcaption>
           </figure>
 
           <h3 id="receipts">Till receipts</h3>
@@ -237,10 +229,10 @@
           <p>When a unique code is printed on the outside of the pack &mdash; which we strongly recommend for cost, speed and consumer experience &mdash; the residual fraud concern is in-store code copying: someone scanning a code without buying the product. In practice this is rare, but for higher-stakes campaigns the latest AI Vision techniques now make it feasible to check that the user is not in-store when submitting the code.</p>
           <p>That audit step does not have to be universal. It can be applied to every entry where the brand wants maximum assurance, or triggered selectively when a consumer&rsquo;s behaviour looks suspicious. The campaign flow can ask the user to scan the code and surrounding environment, with BBD and production-line data cross-referenced against the submitted code.</p>
 
-          <p class="pull">A unique code is the only proof-of-purchase that can be used once, audited end-to-end, never exists in an exposable database, generates clean consumer data, and can be supported by AI Vision audit checks when the risk profile warrants it. No other mechanic on this page can do all five.</p>
+          <p class="pull pull--proof">A unique code is the only proof-of-purchase that can be used once, audited end-to-end, never exists in an exposable database, generates clean consumer data, and can be supported by AI Vision audit checks when the risk profile warrants it. No other mechanic on this page can do all five.</p>
 
           <h2 id="when">When till receipts and batch codes still make sense</h2>
-          <p>To be even-handed: there are edge cases where the simpler mechanics still have a place, but the trade-off should be explicit. A free-entry sweepstake may be acceptable for a very low-value prize or pure awareness mechanic, but it often attracts bots, fake details, duplicate accounts and low-intent entries that undermine the consumer database the brand hoped to build. A pure data-capture promotion where the brand cares more about reach than rigour might be served well enough by a batch code, accepting that the resulting data will be noisier. A retail-receipt programme run jointly with a specific retailer might use receipts because they&rsquo;re part of the agreed mechanic with that retailer. But for any promotion with monetary value attached &mdash; cash back, prizes, vouchers worth pursuing, refunds, anti-counterfeit verification &mdash; a unique code is the right primitive.</p>
+          <p>To be even-handed: there are edge cases where till receipts and batch codes may still have a place, but the trade-off should be explicit. A low value promotion where the brand cares more about reach than rigour might be served well enough by a batch code, accepting that the resulting data will be polluted. A retail-receipt programme run jointly with a specific retailer might use receipts because they&rsquo;re part of the agreed mechanic with that retailer. But for any promotion with monetary value attached &mdash; cash back, prizes, vouchers worth pursuing, refunds, anti-counterfeit verification &mdash; a unique code is the right primitive.</p>
 
           <h2 id="faq">Common questions</h2>
           <div class="faq" role="region" aria-label="Frequently asked questions">
@@ -282,7 +274,7 @@
           <h5>On this page</h5>
           <ol>
             <li><a href="#problem">The proof-of-purchase problem</a></li>
-            <li><a href="#mechanics">The four mechanics, side by side</a></li>
+            <li><a href="#mechanics">The three mechanics, side by side</a></li>
             <li><a href="#closed-loop">Closed-loop architecture</a></li>
             <li><a href="#ai">AI Vision audit layer</a></li>
             <li><a href="#when">When the alternatives make sense</a></li>

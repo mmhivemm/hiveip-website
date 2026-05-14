@@ -350,8 +350,8 @@ abbr[title] {
   align-items: center;
   text-decoration: none;
 }
-.brand img { height: 30px; width: auto; }
-@media (min-width: 1024px) { .brand img { height: 36px; } }
+.brand img { height: 39px; width: auto; }
+@media (min-width: 1024px) { .brand img { height: 47px; } }
 
 .primary-nav {
   display: none;
@@ -1508,6 +1508,21 @@ main > .breadcrumbs + .section:has(> .container > .page-hero__inner) {
   border-bottom: 1px solid var(--line);
   padding: var(--s-8) 0;
   margin: var(--s-10) 0;
+}
+
+.pull--proof {
+  position: relative;
+  overflow: hidden;
+  font-size: var(--fs-lg);
+  line-height: var(--lh-normal);
+  color: var(--ink);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 244, 231, 0.96) 48%, rgba(243, 251, 246, 0.98) 100%);
+  border: 1px solid rgba(240, 142, 49, 0.28);
+  border-left: 5px solid var(--orange);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-2);
+  padding: var(--s-6);
 }
 
 /* ---------- Inline list with bullets disabled (use dash separators) ---------- */

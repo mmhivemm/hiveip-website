@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">On-pack and digital campaign engines</title>
+  <desc id="desc">Per-pack unique codes link a scale-focused on-pack promotion with targeted digital campaign moments.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fffaf4"/>
+      <stop offset="58%" stop-color="#f7f7f4"/>
+      <stop offset="100%" stop-color="#fbf1e5"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f08e31"/>
+      <stop offset="100%" stop-color="#c66515"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#111111" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .bg{fill:url(#bg)}.panel{fill:#fff;stroke:#e5e5e5;stroke-width:2;filter:url(#shadow)}.soft{fill:#fafaf9}.dark{fill:#111}.orange{fill:url(#orange)}.green{fill:#1f8a4c}.line{fill:none;stroke:#cfd5d2;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.line-o{fill:none;stroke:#f08e31;stroke-width:8;stroke-linecap:round}.line-g{fill:none;stroke:#1f8a4c;stroke-width:8;stroke-linecap:round}.kicker{font:800 23px Inter,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;fill:#c66515}.title{font:850 54px Inter,Arial,sans-serif;fill:#1a1a1a}.label{font:800 25px Inter,Arial,sans-serif;fill:#1a1a1a}.small{font:700 20px Inter,Arial,sans-serif;fill:#4a4a4a}.tiny{font:750 17px Inter,Arial,sans-serif;fill:#6b6b6b}.chip{font:850 22px Inter,Arial,sans-serif;fill:#fff}.mono{font:850 28px SFMono-Regular,Consolas,monospace;letter-spacing:.08em;fill:#1a1a1a}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="675" rx="28"/>
+  <path d="M0 510C220 425 290 250 505 294c180 37 224 207 406 146 126-43 171-178 289-195v430H0Z" fill="#f08e31" opacity=".10"/>
+  <text x="72" y="94" class="kicker">Marketing strategy</text>
+  <text x="72" y="172" class="title">Unique codes,</text>
+  <text x="72" y="235" class="title">two campaign engines</text>
+  <text x="74" y="292" class="small">On-pack recruits at scale. Digital keeps known</text>
+  <text x="74" y="322" class="small">consumers engaged between major promotions.</text>
+  <g transform="translate(74 386)">
+    <rect width="292" height="168" rx="22" class="panel"/>
+    <rect x="24" y="24" width="56" height="56" rx="28" class="orange"/>
+    <text x="52" y="62" text-anchor="middle" class="chip">1</text>
+    <text x="100" y="49" class="label">On-pack</text>
+    <text x="100" y="82" class="small">annual promotion</text>
+    <path d="M42 112h196" class="line-o"/>
+    <circle cx="42" cy="112" r="10" fill="#c66515"/>
+    <circle cx="238" cy="112" r="10" fill="#c66515"/>
+  </g>
+  <g transform="translate(454 350)">
+    <rect width="292" height="232" rx="26" class="panel"/>
+    <rect x="46" y="48" width="200" height="104" rx="18" fill="#fafaf9" stroke="#d8d8d8" stroke-width="3"/>
+    <rect x="66" y="72" width="160" height="18" rx="9" class="orange"/>
+    <text x="146" y="132" text-anchor="middle" class="mono">HX7K9Q2M</text>
+    <text x="146" y="192" text-anchor="middle" class="tiny">Unique pack code</text>
+  </g>
+  <g transform="translate(834 386)">
+    <rect width="292" height="168" rx="22" class="panel"/>
+    <rect x="24" y="24" width="56" height="56" rx="28" class="green"/>
+    <text x="52" y="62" text-anchor="middle" class="chip">2</text>
+    <text x="100" y="49" class="label">Digital</text>
+    <text x="100" y="82" class="small">targeted moments</text>
+    <path d="M42 112h196" class="line-g"/>
+    <circle cx="42" cy="112" r="10" fill="#1f8a4c"/>
+    <circle cx="238" cy="112" r="10" fill="#1f8a4c"/>
+  </g>
+  <path d="M368 470h72" class="line"/>
+  <path d="M760 470h72" class="line"/>
+  <path d="M432 470l-18-12v24Z" fill="#cfd5d2"/>
+  <path d="M824 470l-18-12v24Z" fill="#cfd5d2"/>
+</svg>

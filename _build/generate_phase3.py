@@ -112,9 +112,7 @@ def page(*, depth, title, description, slug_path, og_title=None, og_desc=None,
   }
   </script>"""
 
-    final_phone_html = """
-        &middot;
-        <a href="tel:+447787826362">+44&nbsp;7787&nbsp;826&nbsp;362</a>""" if show_final_phone else ""
+    final_phone_html = ""
 
     og_t = og_title or title
     og_d = og_desc  or description
@@ -187,9 +185,6 @@ def page(*, depth, title, description, slug_path, og_title=None, og_desc=None,
   <meta name="twitter:image" content="{meta_og_image}">
   <meta name="twitter:card" content="summary_large_image">
 {favicon_links}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{r}assets/css/site.css">
 {breadcrumb_schema}
 {schema_extra}
@@ -286,12 +281,16 @@ def page(*, depth, title, description, slug_path, og_title=None, og_desc=None,
     </div>
     <div class="footer-bottom">
       <span>&copy; <span id="footer-year">2026</span> Hive IP Ltd. All rights reserved.</span>
+      <nav class="footer-legal" aria-label="Legal">
+        <a href="{r}privacy-policy/index.html">Privacy policy</a>
+        <a href="{r}cookie-policy/index.html">Cookie policy</a>
+      </nav>
     </div>
   </div>
 </footer>
 
 <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
-<script src="{r}assets/js/main.js" defer></script>
+<script src="{r}assets/js/main.js?v=20260517" defer></script>
 </body>
 </html>
 """

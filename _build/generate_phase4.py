@@ -419,7 +419,7 @@ ABOUT_BODY = """
         <p>We supply the ACG hardware at no charge into customer factories and bill only on the codes covered by an active promotional campaign &mdash; the codes on packs in market during the campaign window. Validation, fraud monitoring and consumer-support tooling are included. <a href="../our-model/">Read about our model &rarr;</a></p>
 
         <h2>How to talk to us</h2>
-        <p>The shortest path is to email <a href="mailto:info@hiveip.co.uk">info@hiveip.co.uk</a>, or use the form on our <a href="../contact/">contact page</a>. We&rsquo;ll usually respond the same working day.</p>
+        <p>The shortest path is to email <a href="mailto:info@hiveip.co.uk">info@hiveip.co.uk</a>, or use the form on our <a href="../contact/">contact page</a>.</p>
       </div>
     </div>
   </section>
@@ -432,7 +432,7 @@ CONTACT_BODY = """
       <div class="page-hero__inner">
         <span class="eyebrow">Talk to us</span>
         <h1>Send us your details and we&rsquo;ll be in touch.</h1>
-        <p class="lead">We respond to every enquiry from a real person &mdash; usually the same working day. If your question is technical, commercial or strategic, we&rsquo;ll route it to the right person on our team.</p>
+        <p class="lead">We respond to every enquiry from a real person. If your question is technical, commercial or strategic, we&rsquo;ll route it to the right person on our team.</p>
       </div>
     </div>
   </section>
@@ -505,7 +505,7 @@ CONTACT_BODY = """
               Send enquiry
               <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
-            <p class="form__hint">Or email us directly. We&rsquo;ll come back to you the same working day.</p>
+            <p class="form__hint">Or email us directly.</p>
           </div>
         </form>
 
@@ -513,11 +513,11 @@ CONTACT_BODY = """
           <div class="contact-card" style="margin-bottom: 1.5rem;">
             <h3>Email</h3>
             <p style="margin: 0;"><a href="mailto:info@hiveip.co.uk">info@hiveip.co.uk</a></p>
-            <p style="margin-top: 0.6rem; color: var(--mute); font-size: var(--fs-sm);">Goes directly to the Hive IP team. Response usually within the same working day.</p>
+            <p style="margin-top: 0.6rem; color: var(--mute); font-size: var(--fs-sm);">Goes directly to the Hive IP team.</p>
           </div>
           <div class="contact-card">
             <h3>Where we are</h3>
-            <p style="margin: 0; color: var(--ink-soft);">Hive IP Ltd is a UK-based company. We work with FMCG brands and their agencies across Europe.</p>
+            <p style="margin: 0; color: var(--ink-soft);">We work with FMCG brands, their agencies and their packaging suppliers globally.</p>
           </div>
         </aside>
       </div>
@@ -593,7 +593,7 @@ def main():
     write("contact/index.html", page(
         depth=1,
         title="Contact Hive IP — talk to us about your unique-coding programme",
-        description="Send us your details and we'll be in touch the same working day. Email info@hiveip.co.uk or use the form on this page.",
+        description="Send us your details or email info@hiveip.co.uk to talk about your unique-coding programme.",
         slug_path="contact",
         body_html=CONTACT_BODY,
         breadcrumbs=[("", "Home"), (None, "Contact")],

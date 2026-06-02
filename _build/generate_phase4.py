@@ -545,28 +545,6 @@ def main():
     for i, a in enumerate(ARTICLES):
         prev_a = ARTICLES[i - 1] if i > 0 else None
         next_a = ARTICLES[i + 1] if i + 1 < len(ARTICLES) else None
-        slug_last = a["slug"].split("/")[-1]
-        # Build schema separately to avoid f-string + backslash limitation
-        title_esc = a["title"].replace('"', '\\"')
-        desc_esc  = a["desc"].replace('"', '\\"')
-        schema = (
-            '\n  <script type="application/ld+json">\n'
-            '  {\n'
-            '    "@context": "https://schema.org",\n'
-            '    "@type": "Article",\n'
-            f'    "headline": "{title_esc}",\n'
-            f'    "description": "{desc_esc}",\n'
-            f'    "datePublished": "{a["date"]}",\n'
-            '    "author": { "@type": "Organization", "name": "Hive IP" },\n'
-            '    "publisher": {\n'
-            '      "@type": "Organization",\n'
-            '      "name": "Hive IP",\n'
-            '      "logo": { "@type": "ImageObject", "url": "https://hiveip.co.uk/assets/img/logo/hive-logo.png" }\n'
-            '    },\n'
-            f'    "mainEntityOfPage": "https://hiveip.co.uk/{a["slug"]}/"\n'
-            '  }\n'
-            '  </script>'
-        )
         write(f"{a['slug']}/index.html", page(
             depth=2,
             title=f"{a['title']} — Hive IP",
@@ -575,7 +553,7 @@ def main():
             body_html=article_body(a, (prev_a, next_a)),
             breadcrumbs=[("", "Home"), ("insights/", "Insights"), (None, a["title"])],
             current_nav_key="insights",
-            schema_extra=schema,
+            date_published=a["date"],
         ))
 
     # About

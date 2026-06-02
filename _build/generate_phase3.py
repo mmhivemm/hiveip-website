@@ -13,6 +13,7 @@ import html as html_lib
 import os
 import re
 from pathlib import Path
+from structured_data import render_json_ld
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -60,7 +61,7 @@ def _normalise_links(html: str, depth: int) -> str:
 def page(*, depth, title, description, slug_path, og_title=None, og_desc=None,
          og_image=None, og_image_width=None, og_image_height=None,
          body_html, breadcrumbs, schema_extra="", current_nav_key, page_class="",
-         show_final_phone=True):
+         show_final_phone=True, page_type=None, date_published=None):
     """Render a full HTML page using site conventions."""
     r = rel(depth)
     canonical = f"https://hiveip.co.uk/{slug_path}/"
@@ -160,6 +161,15 @@ def page(*, depth, title, description, slug_path, og_title=None, og_desc=None,
   <link rel="icon" type="image/png" sizes="16x16" href="{r}assets/img/favicons/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="{r}assets/img/favicons/apple-touch-icon.png">
   <link rel="manifest" href="{r}site.webmanifest">"""
+    structured_json_ld = render_json_ld(
+        slug_path=slug_path,
+        title=title,
+        description=description,
+        breadcrumbs=breadcrumbs,
+        og_image=og_image,
+        page_type=page_type,
+        date_published=date_published,
+    )
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -186,8 +196,7 @@ def page(*, depth, title, description, slug_path, og_title=None, og_desc=None,
   <meta name="twitter:card" content="summary_large_image">
 {favicon_links}
   <link rel="stylesheet" href="{r}assets/css/site.css">
-{breadcrumb_schema}
-{schema_extra}
+{structured_json_ld}
 </head>
 <body class="{page_class}">
 

@@ -29,17 +29,106 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
   <link rel="manifest" href="../site.webmanifest">
   <link rel="stylesheet" href="../assets/css/site.css">
-
+  <!-- JSON-LD:start -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hiveip.co.uk/" },
-      { "@type": "ListItem", "position": 2, "name": "Solution", "item": "https://hiveip.co.uk/solution/" }
-    ]
-  }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Corporation",
+      "@id": "https://hiveip.co.uk/#organization",
+      "name": "Hive IP",
+      "url": "https://hiveip.co.uk/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://hiveip.co.uk/#website",
+      "url": "https://hiveip.co.uk/",
+      "name": "Hive IP",
+      "publisher": {
+        "@id": "https://hiveip.co.uk/#organization"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://hiveip.co.uk/solution/#itemlist",
+      "name": "Solution list",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "In-factory print (ACG)",
+          "url": "https://hiveip.co.uk/solution/in-factory/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Packaging-supplier print",
+          "url": "https://hiveip.co.uk/solution/at-supplier/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cloud validation",
+          "url": "https://hiveip.co.uk/solution/validation/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Consumer Support Panel",
+          "url": "https://hiveip.co.uk/solution/consumer-support/"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://hiveip.co.uk/solution/#webpage",
+      "url": "https://hiveip.co.uk/solution/",
+      "name": "The Hive IP Solution — generation, print, validation and support, end-to-end",
+      "description": "An integrated unique-coding platform: code generation, print (in-factory or via your packaging supplier), cloud validation with fraud monitoring, and a Consumer Support Panel. One team, one system.",
+      "isPartOf": {
+        "@id": "https://hiveip.co.uk/#website"
+      },
+      "about": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "maintainer": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "publisher": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "inLanguage": "en-GB",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://hiveip.co.uk/assets/img/og/solution.png"
+      },
+      "mainEntity": {
+        "@id": "https://hiveip.co.uk/solution/#itemlist"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://hiveip.co.uk/solution/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://hiveip.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Solution",
+          "item": "https://hiveip.co.uk/solution/"
+        }
+      ]
+    }
+  ]
+}
   </script>
+  <!-- JSON-LD:end -->
 </head>
 <body>
 

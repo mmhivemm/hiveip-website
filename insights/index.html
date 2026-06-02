@@ -30,17 +30,133 @@
   <link rel="manifest" href="../site.webmanifest">
   <link rel="stylesheet" href="../assets/css/site.css">
 
+  <!-- JSON-LD:start -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hiveip.co.uk/" },
-      { "@type": "ListItem", "position": 2, "name": "Insights", "item": "https://hiveip.co.uk/insights/" }
-    ]
-  }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Corporation",
+      "@id": "https://hiveip.co.uk/#organization",
+      "name": "Hive IP",
+      "url": "https://hiveip.co.uk/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://hiveip.co.uk/#website",
+      "url": "https://hiveip.co.uk/",
+      "name": "Hive IP",
+      "publisher": {
+        "@id": "https://hiveip.co.uk/#organization"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://hiveip.co.uk/insights/#itemlist",
+      "name": "Insights list",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Unique codes, two campaign engines",
+          "url": "https://hiveip.co.uk/insights/on-pack-digital-campaigns/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Receipts, batch codes, unique codes",
+          "url": "https://hiveip.co.uk/insights/proof-of-purchase-mechanics/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Why in-factory unique-code printing can save 78% or more",
+          "url": "https://hiveip.co.uk/insights/in-factory-printing-cheaper/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Closed-loop coding",
+          "url": "https://hiveip.co.uk/insights/closed-loop-validation/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Outside vs inside the pack",
+          "url": "https://hiveip.co.uk/insights/outside-vs-inside-pack-code-copying/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "From on-pack to digital",
+          "url": "https://hiveip.co.uk/insights/agile-digital-promotions/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Beyond promotions",
+          "url": "https://hiveip.co.uk/insights/beyond-promotions-five-uses/"
+        }
+      ]
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://hiveip.co.uk/insights/#blog",
+      "name": "Hive IP Insights",
+      "publisher": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "description": "Expert commentary on unique coding, FMCG promotions, fraud audit, cloud validation and in-factory print."
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://hiveip.co.uk/insights/#webpage",
+      "url": "https://hiveip.co.uk/insights/",
+      "name": "Insights — field notes on unique coding for FMCG — Hive IP",
+      "description": "Field notes on unique coding, in-factory print, fraud audit options, marketing agility, and broader applications. Written for marketing, procurement and operations teams.",
+      "isPartOf": {
+        "@id": "https://hiveip.co.uk/#website"
+      },
+      "about": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "maintainer": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "publisher": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "inLanguage": "en-GB",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://hiveip.co.uk/assets/img/og/why-unique-codes.png"
+      },
+      "mainEntity": {
+        "@id": "https://hiveip.co.uk/insights/#blog"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://hiveip.co.uk/insights/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://hiveip.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Insights",
+          "item": "https://hiveip.co.uk/insights/"
+        }
+      ]
+    }
+  ]
+}
   </script>
-
+  <!-- JSON-LD:end -->
 </head>
 <body class="">
 

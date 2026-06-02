@@ -32,17 +32,88 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
   <link rel="manifest" href="../site.webmanifest">
   <link rel="stylesheet" href="../assets/css/site.css">
-
+  <!-- JSON-LD:start -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hiveip.co.uk/" },
-      { "@type": "ListItem", "position": 2, "name": "Our model", "item": "https://hiveip.co.uk/our-model/" }
-    ]
-  }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Corporation",
+      "@id": "https://hiveip.co.uk/#organization",
+      "name": "Hive IP",
+      "url": "https://hiveip.co.uk/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://hiveip.co.uk/#website",
+      "url": "https://hiveip.co.uk/",
+      "name": "Hive IP",
+      "publisher": {
+        "@id": "https://hiveip.co.uk/#organization"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://hiveip.co.uk/our-model/#service",
+      "name": "No CapEx promotional coding model",
+      "provider": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "description": "Hive IP supplies ACG line hardware without capital expenditure and bills for codes covered by active campaign windows.",
+      "areaServed": [
+        "GB",
+        "EU"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://hiveip.co.uk/our-model/#webpage",
+      "url": "https://hiveip.co.uk/our-model/",
+      "name": "Our model — Free hardware. Pay only on the codes covered by your active campaigns. — Hive IP",
+      "description": "Hive IP supplies the ACGs at no charge and bills only on the codes covered by an active promotional campaign — the codes on packs in market during the campaign window. Every pack ready to promote, every day of the year.",
+      "isPartOf": {
+        "@id": "https://hiveip.co.uk/#website"
+      },
+      "about": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "maintainer": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "publisher": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "inLanguage": "en-GB",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://hiveip.co.uk/assets/img/og/why-in-factory.png"
+      },
+      "mainEntity": {
+        "@id": "https://hiveip.co.uk/our-model/#service"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://hiveip.co.uk/our-model/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://hiveip.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Our model",
+          "item": "https://hiveip.co.uk/our-model/"
+        }
+      ]
+    }
+  ]
+}
   </script>
+  <!-- JSON-LD:end -->
 </head>
 
 <body>

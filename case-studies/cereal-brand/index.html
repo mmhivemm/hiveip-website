@@ -30,18 +30,96 @@
   <link rel="manifest" href="../../site.webmanifest">
   <link rel="stylesheet" href="../../assets/css/site.css">
 
+  <!-- JSON-LD:start -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hiveip.co.uk/" },
-      { "@type": "ListItem", "position": 2, "name": "Case studies", "item": "https://hiveip.co.uk/case-studies/" },
-      { "@type": "ListItem", "position": 3, "name": "A leading global cereal brand", "item": "https://hiveip.co.uk/case-studies/cereal-brand/" }
-    ]
-  }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Corporation",
+      "@id": "https://hiveip.co.uk/#organization",
+      "name": "Hive IP",
+      "url": "https://hiveip.co.uk/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://hiveip.co.uk/#website",
+      "url": "https://hiveip.co.uk/",
+      "name": "Hive IP",
+      "publisher": {
+        "@id": "https://hiveip.co.uk/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://hiveip.co.uk/case-studies/cereal-brand/#webpage",
+      "url": "https://hiveip.co.uk/case-studies/cereal-brand/",
+      "name": "A leading global cereal brand: 'Buy 3, get 1 free' — Hive IP case study",
+      "description": "Anonymised case study: a top-3 global cereal brand used Hive IP unique codes for a 'Buy 3, get 1 free' on-pack promotion. +3.2% market share, ~£750k saving on fixed-fee insurance, 78%+ reduction in code-print cost.",
+      "isPartOf": {
+        "@id": "https://hiveip.co.uk/#website"
+      },
+      "about": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "maintainer": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "publisher": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "inLanguage": "en-GB",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://hiveip.co.uk/assets/img/og/generated/cereal-brand.png"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://hiveip.co.uk/case-studies/cereal-brand/#article",
+      "headline": "A leading global cereal brand: 'Buy 3, get 1 free'",
+      "description": "Anonymised case study: a top-3 global cereal brand used Hive IP unique codes for a 'Buy 3, get 1 free' on-pack promotion. +3.2% market share, ~£750k saving on fixed-fee insurance, 78%+ reduction in code-print cost.",
+      "image": "https://hiveip.co.uk/assets/img/og/generated/cereal-brand.png",
+      "author": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "publisher": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://hiveip.co.uk/case-studies/cereal-brand/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "genre": "Case study"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://hiveip.co.uk/case-studies/cereal-brand/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://hiveip.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Case studies",
+          "item": "https://hiveip.co.uk/case-studies/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "A leading global cereal brand",
+          "item": "https://hiveip.co.uk/case-studies/cereal-brand/"
+        }
+      ]
+    }
+  ]
+}
   </script>
-
+  <!-- JSON-LD:end -->
 </head>
 <body class="">
 

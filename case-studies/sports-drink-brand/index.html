@@ -30,18 +30,96 @@
   <link rel="manifest" href="../../site.webmanifest">
   <link rel="stylesheet" href="../../assets/css/site.css">
 
+  <!-- JSON-LD:start -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hiveip.co.uk/" },
-      { "@type": "ListItem", "position": 2, "name": "Case studies", "item": "https://hiveip.co.uk/case-studies/" },
-      { "@type": "ListItem", "position": 3, "name": "A leading sports-drink brand", "item": "https://hiveip.co.uk/case-studies/sports-drink-brand/" }
-    ]
-  }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Corporation",
+      "@id": "https://hiveip.co.uk/#organization",
+      "name": "Hive IP",
+      "url": "https://hiveip.co.uk/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://hiveip.co.uk/#website",
+      "url": "https://hiveip.co.uk/",
+      "name": "Hive IP",
+      "publisher": {
+        "@id": "https://hiveip.co.uk/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://hiveip.co.uk/case-studies/sports-drink-brand/#webpage",
+      "url": "https://hiveip.co.uk/case-studies/sports-drink-brand/",
+      "name": "A leading sports-drink brand: just-in-time digital activation — Hive IP case study",
+      "description": "Anonymised case study: a sports-drink brand used Hive IP's always-on coding to launch a digital direct-to-consumer push within minutes of a major sporting moment, without any new printing.",
+      "isPartOf": {
+        "@id": "https://hiveip.co.uk/#website"
+      },
+      "about": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "maintainer": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "publisher": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "inLanguage": "en-GB",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://hiveip.co.uk/assets/img/og/generated/sports-drink-brand.png"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://hiveip.co.uk/case-studies/sports-drink-brand/#article",
+      "headline": "A leading sports-drink brand: just-in-time digital activation",
+      "description": "Anonymised case study: a sports-drink brand used Hive IP's always-on coding to launch a digital direct-to-consumer push within minutes of a major sporting moment, without any new printing.",
+      "image": "https://hiveip.co.uk/assets/img/og/generated/sports-drink-brand.png",
+      "author": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "publisher": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://hiveip.co.uk/case-studies/sports-drink-brand/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "genre": "Case study"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://hiveip.co.uk/case-studies/sports-drink-brand/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://hiveip.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Case studies",
+          "item": "https://hiveip.co.uk/case-studies/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "A leading sports-drink brand",
+          "item": "https://hiveip.co.uk/case-studies/sports-drink-brand/"
+        }
+      ]
+    }
+  ]
+}
   </script>
-
+  <!-- JSON-LD:end -->
 </head>
 <body class="">
 

@@ -42,40 +42,90 @@
   <link rel="stylesheet" href="assets/css/site.css">
 
   <!-- Structured data -->
+  <!-- JSON-LD:start -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Hive IP",
-    "alternateName": "Hive IP Ltd",
-    "url": "https://hiveip.co.uk/",
-    "logo": "https://hiveip.co.uk/assets/img/logo/hive-logo.png",
-    "description": "Hive IP provides end-to-end unique-coding solutions for FMCG brands — code generation, in-factory or packaging-supplier print, cloud validation, fraud monitoring and consumer support.",
-    "email": "info@hiveip.co.uk",
-    "areaServed": ["GB", "EU"],
-    "knowsAbout": [
-      "Unique codes",
-      "Unique-code printing",
-      "Automated Code Generator",
-      "On-pack promotions",
-      "Promotional code validation",
-      "FMCG brand protection"
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Hive IP",
-    "url": "https://hiveip.co.uk/",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://hiveip.co.uk/?s={search_term_string}",
-      "query-input": "required name=search_term_string"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Corporation",
+      "@id": "https://hiveip.co.uk/#organization",
+      "name": "Hive IP",
+      "url": "https://hiveip.co.uk/",
+      "legalName": "HIVE IP LTD",
+      "alternateName": "Hive IP Ltd",
+      "identifier": "04696887",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://hiveip.co.uk/#logo",
+        "url": "https://hiveip.co.uk/assets/img/logo/hive-logo.png",
+        "caption": "Hive IP logo"
+      },
+      "email": "info@hiveip.co.uk",
+      "description": "Hive IP provides end-to-end unique-coding infrastructure for FMCG brands, including code generation, in-factory or packaging-supplier print, cloud validation, fraud monitoring and consumer support.",
+      "areaServed": [
+        "GB",
+        "EU"
+      ],
+      "knowsAbout": [
+        "FMCG promotional marketing",
+        "Unique coding systems on packaging",
+        "FMCG loyalty programmes",
+        "Supply chain traceability",
+        "Brand protection",
+        "Anti-counterfeit packaging",
+        "Cloud validation APIs",
+        "Automated Code Generator"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "info@hiveip.co.uk",
+          "availableLanguage": [
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://hiveip.co.uk/#website",
+      "url": "https://hiveip.co.uk/",
+      "name": "Hive IP",
+      "publisher": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "description": "Unique codes for FMCG promotions and loyalty programmes, generated, printed and validated end-to-end."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://hiveip.co.uk/#webpage",
+      "url": "https://hiveip.co.uk/",
+      "name": "Hive IP — Unique codes for FMCG promotions, generated, printed and validated end-to-end",
+      "description": "Hive IP generates unique codes, prints them in your factory using our ACG (Automated Code Generator) or supplies them to your packaging supplier, and validates them in the cloud — securely, at scale, for the world’s largest brands.",
+      "isPartOf": {
+        "@id": "https://hiveip.co.uk/#website"
+      },
+      "about": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "maintainer": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "publisher": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "inLanguage": "en-GB",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://hiveip.co.uk/assets/img/og/home.png"
+      }
     }
-  }
+  ]
+}
   </script>
+  <!-- JSON-LD:end -->
 </head>
 <body>
 

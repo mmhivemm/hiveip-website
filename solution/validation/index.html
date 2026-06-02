@@ -28,18 +28,95 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicons/apple-touch-icon.png">
   <link rel="manifest" href="../../site.webmanifest">
   <link rel="stylesheet" href="../../assets/css/site.css">
-
+  <!-- JSON-LD:start -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hiveip.co.uk/" },
-      { "@type": "ListItem", "position": 2, "name": "Solution", "item": "https://hiveip.co.uk/solution/" },
-      { "@type": "ListItem", "position": 3, "name": "Cloud validation", "item": "https://hiveip.co.uk/solution/validation/" }
-    ]
-  }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Corporation",
+      "@id": "https://hiveip.co.uk/#organization",
+      "name": "Hive IP",
+      "url": "https://hiveip.co.uk/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://hiveip.co.uk/#website",
+      "url": "https://hiveip.co.uk/",
+      "name": "Hive IP",
+      "publisher": {
+        "@id": "https://hiveip.co.uk/#organization"
+      }
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://hiveip.co.uk/solution/validation/#software",
+      "name": "Hive IP Cloud Validation API",
+      "applicationCategory": [
+        "BusinessApplication",
+        "SecurityApplication"
+      ],
+      "operatingSystem": "Cloud API",
+      "author": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "description": "Cloud validation infrastructure for high-throughput, real-time, algorithmic authentication of unique code entries."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://hiveip.co.uk/solution/validation/#webpage",
+      "url": "https://hiveip.co.uk/solution/validation/",
+      "name": "Cloud validation, security and API — Hive IP",
+      "description": "Hive IP's cloud validation platform: algorithmic (not database-lookup) validation on AWS, 99.85% uptime SLA, real-time fraud monitoring, optional AI Vision audit workflows, full audit trails, and a single API for your agency.",
+      "isPartOf": {
+        "@id": "https://hiveip.co.uk/#website"
+      },
+      "about": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "maintainer": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "publisher": {
+        "@id": "https://hiveip.co.uk/#organization"
+      },
+      "inLanguage": "en-GB",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://hiveip.co.uk/assets/img/og/generated/closed-loop-validation.png"
+      },
+      "mainEntity": {
+        "@id": "https://hiveip.co.uk/solution/validation/#software"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://hiveip.co.uk/solution/validation/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://hiveip.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Solution",
+          "item": "https://hiveip.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cloud validation",
+          "item": "https://hiveip.co.uk/solution/validation/"
+        }
+      ]
+    }
+  ]
+}
   </script>
+  <!-- JSON-LD:end -->
 </head>
 <body>
 
